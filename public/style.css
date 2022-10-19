@@ -1,0 +1,117 @@
+*{
+    font-family: 'McLaren', cursive;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #eee;
+}
+.header{
+    background-color: #f5ba13;
+    padding: 16px 32px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+.header h1 {
+    color: #fff;
+    font-family: "McLaren", cursive;
+    font-weight: 200;
+  }
+
+.createNote{
+  background: white;
+  width: 40%;
+  padding: 1%;
+  margin: 2% auto;
+  border-radius: 2%;
+  box-shadow: 0 2px 5px #ccc;
+  position: relative;
+}
+.createNote form input, textarea{
+  display: block;
+  width: 95%;
+  /* margin: 1%; */
+  margin: 1% auto;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.add_btn{
+  border: none;
+  background: white;
+  font-size: 1rem;
+  font-weight: 800;
+  color: rgb(237, 202, 0);
+  position: absolute;
+  right: 2%;
+  bottom: 2%;
+  transition: .3s;
+  cursor: pointer;
+}
+.add_btn:hover{
+  color: rgb(0, 170, 0);
+  padding: 1%;
+}
+
+#addWarning{
+  font-size: .6em;
+  color: red;
+  font-weight: 700;
+  visibility: hidden;
+}
+
+.noteContainer{
+  margin: 1% auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  /* flex: 9; */
+  justify-content: space-between;
+}
+.notes{
+    background: #fff;
+    border-radius: 2%;
+    box-shadow: 0 2px 5px #ccc;
+    padding: 1%;
+    width: 30%;
+    margin: 1%;
+    position:relative;
+    cursor: pointer;
+}
+
+.notes h1{
+    /* font-size: 18px; */
+    margin-bottom: 6px;
+}
+.notes p{
+  font-size: 18px;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.dlt_btn{
+  border: none;
+  background: white;
+  font-weight: 800;
+  color: rgb(237, 202, 0);
+  position: absolute;
+  right: 2%;
+  bottom: 2%;
+  cursor: pointer;
+  transition: .3s;
+}
+.dlt_btn:hover{
+  color: red;
+  padding: 1%;
+}
+.footer {
+    /* position: absolute;
+    bottom: 0; */
+    text-align: center;
+    width: 100%; 
+    height: 2.5rem;
+  }
+.footer p {
+    color: #ccc;
+  } 
